@@ -40,7 +40,7 @@ function liri() {
 			        console.log('Error occurred: ' + err);
 			        return;
 			    }
-			    var songInfo = data.tracks.items[0];		 	
+			    var songInfo = data.tracks.items[0];
 			    if (songInfo == undefined) {
 					console.log('--------------------');
 			    	console.log('I can\'t find your song! Here is info about an American classic! \nArtist: Ace of Base \nSong: The Sign \nAlbum: The Sign \nPreview link: https://p.scdn.co/mp3-preview/177e65fc2b8babeaf9266c0ad2a1cb1e18730ae4');
@@ -103,6 +103,7 @@ function liri() {
 
 liri();
 
+//TODO – BONUS
 function appendLog() {
 
 	fs.appendFile('log.txt', newCommand, function(err) {
